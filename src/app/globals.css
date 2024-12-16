@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* google map tooltip InfoCard css */
+.gm-style-iw {
+  padding: 0px !important;
+}
+.gm-style-iw-chr {
+  display: none !important;
+}
+.gm-style-iw-d {
+  overflow: hidden !important;
+  padding: 0px !important;
+}
+
+.custom-date-range .rdrDefinedRangesWrapper {
+  display: none; /* Hide the left section entirely */
+}
+
+.custom-date-range .rdrCalendarWrapper {
+  border-left: none; /* Remove any unnecessary border */
+  margin: 0 auto; /* Center the calendar component */
+}
+
+.custom-date-range .rdrMonthAndYearPickers select {
+  font-size: 14px; /* Adjust the font size for month and year dropdowns */
+}
+
+.custom-date-range .rdrMonths {
+  justify-content: center; /* Center the months in the available space */
+}
+
+.custom-date-range .rdrCalendarWrapper {
+  width: 100%; /* Make sure the calendar wrapper takes full width */
+}
+
+.custom-date-range .rdrDateRangeWrapper {
+  display: flex;
+  justify-content: center; /* Center the range selection */
+}
+/* Custom CSS to increase the height of the selected area in DateRangePicker */
+/* .custom-date-range .rdrSelected {
+  height: 5.5rem; 
+  margin-top: 0.25rem; 
+} */
+
+/* Scrollbar CSS */
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* Add padding inside the thumb for the rounded effect at both ends */
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  scrollbar-gutter: stable; /* Ensure stable scrollbar to prevent layout shift */
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
